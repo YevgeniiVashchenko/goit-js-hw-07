@@ -37,5 +37,11 @@ function onGalleryCollectionClick(event) {
  `);
 
   modal.show();
-  console.log(event.target);
+
+  document.addEventListener('keydown', closeModal);
+  function closeModal(event) {
+    if (event.code === 'Escape') {
+      modal.close();
+    }
+  }
 }
