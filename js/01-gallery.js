@@ -40,8 +40,10 @@ function onGalleryCollectionClick(event) {
 
   document.addEventListener('keydown', closeModal);
   function closeModal(event) {
+    document.removeEventListener('keydown', closeModal);
     if (event.code === 'Escape') {
       modal.close();
+      console.log(key);
     }
   }
 }

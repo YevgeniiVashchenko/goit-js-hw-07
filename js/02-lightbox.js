@@ -10,7 +10,6 @@ new SimpleLightbox('.gallery__item', {
   captionsData: 'alt',
   captionDelay: 250,
 });
-console.log(modal);
 function createGalleryMarkup(items) {
   return items
     .map(({ preview, original, description }) => {
